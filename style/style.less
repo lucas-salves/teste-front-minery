@@ -12,41 +12,37 @@
     padding: 0;
 }
 
-body{
-
-}
-
-p{
-
-}
-
-h1{
-
-}
-
-h2{
-
-}
-
-ul{
-
-}
-
-a{
-
-}
+.grid-display{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}   
 
 #page-container{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-gap: 10px;
     max-width: 80vw;
+    margin: 0 auto;
+}
+
+#page-container > * {        
+    grid-column: 1/13;
 }
 
 /* || Main navigation */
 
 /* || Frontpage Header */
 
+.header-left{
+    grid-column: 1/8;
+}
+
+.header-right{
+    grid-column: 8/13;
+}
+
+    
+    
 /* || Frontpage call to action section */
 
 /* || Frontpage benefits section */
