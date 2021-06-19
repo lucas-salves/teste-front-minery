@@ -58,8 +58,8 @@ button {
 
 .grid-display{
     display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(12, 69px);
+    grid-gap: 30px;
 } 
 
 .flex-row{
@@ -173,12 +173,40 @@ button {
 
 /* || Frontpage call to action section */
 
+.front-page-call-to-action-container{
+    height: 650px;
+    width: 100vw;
+}
+
+.fp-call-to-action-wrapper {
+    width: 60vw;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#fp-call-to-action-right h2, #fp-call-to-action-right p, #fp-call-to-action-right ul{
+    margin-bottom: 24px;
+}
+
+#fp-call-to-action-right ul{
+     transform: translateX(35px);
+}
+
+#fp-call-to-action-left img{
+    height: 500px;
+    width: auto;
+}
+
 #fp-call-to-action-left{
     grid-column: 1/6;
+    transform: translateX(-140px);
 }
 
 #fp-call-to-action-right{
-    grid-column: 6/13;
+    grid-column: 7/13;
 }
 
 h2{
