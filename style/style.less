@@ -289,17 +289,76 @@ section p, section ul {
 }
 
 /* || Frontpage footer */
+
+.frontpage-footer-wrapper form{
+    
+}
+
+
+.fp-contact-wrapper h2 {
+    width: 564.5px;
+}
+
+.fp-contact-wrapper p{
+    transform: translateY(24px);
+    width: 564.5px;
+}
+
+.fp-contact-wrapper{
+    transform: translateY(72px);
+    width: 60vw;
+    margin: 0 auto;
+    
+}
+
+.frontpage-footer-wrapper{
+    height: 418px;
+}
+
 .fp-footer-left{
     grid-column: 3/8;
 }
 
 .fp-footer-right{
-    grid-column: 8/13;
+    grid-column: 9/13;
 }
 
 .form-wrapper{
-    grid-column: 6/10;    
+    width: 480px;
+    height: 44px;
+    display: flex;
     
+}
+
+.form-wrapper input[type=email]{
+    width: 480px;
+    border: 1px solid @color-lighter-gray;
+    border-radius: 22px;
+    opacity: 1;
+    padding-right: 110px;
+    font-size: 1em;
+    padding-left: 15px;
+}
+
+.form-wrapper input[type=submit]{
+    width: 99px;
+    transform: translateX(-79px);
+    position: absolute;
+    right: -79px;
+}
+
+footer {
+    width: 100vw;
+}
+
+.form-wrapper{
+    transform: translateY(80px);
+    grid-column: 6/13;
+}
+
+.grid-wrapper{
+    width: 60vw;
+    margin: 0 auto;
 }
 
 .frontpage-footer-wrapper input{
