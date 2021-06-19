@@ -68,15 +68,16 @@ button {
 }
 
 #page-container{
-    display: grid;
-    grid-template-columns: repeat(12,69px);
-    grid-gap: 30px;
+    // display: grid;
+    // grid-template-columns: repeat(12,69px);
+    // grid-gap: 30px;
     max-width: 80vw;
     margin: 0 auto;    
 }
 
 #page-container > * {        
-    grid-column: 1/13;
+    // grid-column: 1/13;
+    
 }
 
 #page-container > section:nth-child(odd){
@@ -97,6 +98,11 @@ button {
     grid-template-columns: repeat(12, 69px);
     grid-gap: 30px;
     
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
 }
 
 /* || Main navigation */
@@ -176,6 +182,8 @@ button {
 .front-page-call-to-action-container{
     height: 650px;
     width: 100vw;
+    transform: translateX(-10%);
+    margin: 0;
 }
 
 .fp-call-to-action-wrapper {
@@ -227,8 +235,57 @@ section p, section ul {
 
 /* || Frontpage benefits section */
 
+.frontpage-benefits-container{
+    width: 100vw;
+    grid-column: none;
+    transform: translateX(-10%);
+    height: 650px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.frontpage-benefits-container p{
+    width: 564px;
+    margin: 0 auto;
+}
+
+#fp-benefits-card-wrapper section img{
+    width: auto;
+    height: 128px;
+}
+
+#fp-benefits-card-wrapper{
+    justify-content: center;
+}
+
+#fp-benefits-card-wrapper .benefit-card{
+    padding: 64px 80.16px 64px 80px;
+    border-radius: 16px;
+    box-shadow: 0px 3px 6px @color-lightest-pink
+}
+
+.fp-benefit-wrapper{
+    width: 60vw;
+    margin: 0 auto;    
+    transform: translateY(68px);
+}
+
+.fp-benefit-wrapper h2{
+    margin: 0;
+    padding: 0;
+}
+
+.fp-benefit-wrapper p{
+    margin-bottom: 48.5px;
+}
+
 .benefit-card {
     background-color: @color-white;
+    margin-right: 30px;
+    width: 256px;
+    box-sizing: border-box;
+    text-align: center;
+    opacity: 1;
 }
 
 /* || Frontpage footer */
