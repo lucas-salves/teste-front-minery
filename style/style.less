@@ -55,6 +55,7 @@ button {
 .grid-display{
     display: grid;
     grid-template-columns: repeat(12,1fr);
+    grid-gap: 10px;
 } 
 
 .flex-row{
@@ -67,7 +68,7 @@ button {
     grid-template-columns: repeat(12,1fr);
     grid-gap: 10px;
     max-width: 80vw;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 #page-container > * {        
@@ -87,10 +88,18 @@ button {
     padding: 0;
 }
 
+.grid-mask{       
+    display: grid;
+    grid-template-columns: repeat(12, 69px);
+    grid-gap: 30px;
+    
+}
+
 /* || Main navigation */
 
 .main-navigation {
     height: 102px;
+    
 }
 
 .main-navigation ul li a{
@@ -110,11 +119,15 @@ button {
 /* || Frontpage Header */
 
 .header-left{
-    grid-column: 1/8;
+    grid-column: 1/9;    
+}
+.header-left h1{
+    
 }
 
 .header-right{
-    grid-column: 8/13;
+    grid-column: 9/13;
+    transform: translateX(-216px);
 }
    
 .header-content h1, .header-content button {
@@ -130,7 +143,28 @@ button {
 
 .header-content{
     background: radial-gradient(farthest-side at 95% 76%, #FE1390 0%, #DF1CC5 100%) 0% 0% no-repeat padding-box;
+    width: 100vw;
+    height: 650px;
+    transform: translateX(-10%);
+    
+}
 
+.header-item{
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.header-right img {
+    width: 750px;
+    height: auto;
+}
+
+.header-left{
+    transform: translateY(186px);
+}
+
+.header-left button{
+    transform: translateY(64px);
 }
 
 /* || Frontpage call to action section */
