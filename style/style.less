@@ -243,6 +243,25 @@ section p, section ul {
 
 /* || Frontpage benefits section */
 
+.benefit-text{
+    width: 208px;
+    height: 78px;
+    background-color: @color-lighter-pink;
+    font-size: 1em;
+    box-sizing: border-box;
+    overflow: hidden;    
+    padding: 20px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 16px;
+    color: @color-white; 
+    opacity: 0;
+    transition: .5s;
+}
+
+
 .frontpage-benefits-container{
     width: 100vw;
     grid-column: none;
@@ -269,7 +288,9 @@ section p, section ul {
 #fp-benefits-card-wrapper .benefit-card{
     padding: 58px 46px 70px 46px;
     border-radius: 16px;
-    box-shadow: 0px 3px 6px @color-lightest-pink
+    // box-shadow: 0px 3px 6px @color-lightest-pink;
+    border: 0px 3px 6px solid @color-lightest-pink;
+    // border: 0 solid  rgba(@color-darker-violet, .05);   
 }
 
 .fp-benefit-wrapper{
@@ -288,12 +309,13 @@ section p, section ul {
 }
 
 .benefit-card {
+    position: relative;
     background-color: @color-white;
     margin-right: 30px;
     width: 256px;
     box-sizing: border-box;
     text-align: center;
-    opacity: 1;
+    opacity: 1;    
 }
 
 /* || Frontpage footer */
