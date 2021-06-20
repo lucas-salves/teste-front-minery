@@ -46,6 +46,9 @@ h2,
 button {
   text-transform: uppercase;
 }
+button:hover {
+  cursor: pointer;
+}
 P,
 a,
 h1,
@@ -276,6 +279,9 @@ section ul {
   border-bottom: 3px solid rgba(223, 28, 197, 0.05);
   border-right: 2px solid rgba(223, 28, 197, 0.05);
 }
+#fp-benefits-card-wrapper .benefit-card:hover {
+  cursor: pointer;
+}
 .fp-benefit-wrapper {
   width: 60vw;
   margin: 0 auto;
@@ -339,6 +345,9 @@ section ul {
   transform: translateX(-79px);
   position: absolute;
   right: -79px;
+}
+.form-wrapper input[type=submit]:hover {
+  cursor: pointer;
 }
 .hr-wrapper {
   width: 100%;
