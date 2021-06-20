@@ -195,6 +195,10 @@ button {
   align-items: center;
   margin: 0 auto;
 }
+.fp-call-to-action-list li {
+  font-family: 'Open Sans';
+  font-size: 16px;
+}
 #fp-call-to-action-right h2,
 #fp-call-to-action-right p,
 #fp-call-to-action-right ul {
