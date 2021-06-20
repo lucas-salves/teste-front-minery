@@ -70,25 +70,25 @@ button {
 }
 
 #page-container{
-    // display: grid;
-    // grid-template-columns: repeat(12,69px);
-    // grid-gap: 30px;
     max-width: 80vw;
     margin: 0 auto;    
     
 }
 
 #page-container > * {        
-    // grid-column: 1/13;
-    
+    // grid-column: 1/13;   
 }
 
-#page-container main > section:nth-child(even){
-    background-color: @color-lightest-gray;
+#page-container main{
+    > section:nth-child(even){
+        background-color: @color-lightest-gray;
+    }
 }
 
-#page-container main > section:nth-child(odd){
-    background-color: @color-white;
+#page-container main {
+    > section:nth-child(odd){
+        background-color: @color-white;
+    }    
 }
 
 .main-navigation *{
@@ -117,10 +117,12 @@ button {
     margin: 0 auto;
 }
 
-.main-navigation ul li a{
+.main-navigation{
+    ul li a{
     margin-right: 64px;
     line-height: 100px;
     transition: .2s;
+    }
 }
 
 .main-navigation ul li a{
@@ -138,9 +140,6 @@ button {
 
 .header-left{
     grid-column: 1/9;    
-}
-.header-left h1{
-    
 }
 
 .header-right{
@@ -172,17 +171,21 @@ button {
     margin: 0 auto;
 }
 
-.header-right img {
-    width: 750px;
-    height: auto;
+.header-right{
+    img { 
+        width: 750px;
+        height: auto;
+    }
 }
 
 .header-left{
     transform: translateY(186px);
 }
 
-.header-left button{
-    transform: translateY(64px);
+.header-left{
+    button{ 
+        transform: translateY(64px);
+    }    
 }
 
 /* || Frontpage call to action section */
@@ -207,13 +210,17 @@ button {
     margin-bottom: 24px;
 }
 
-#fp-call-to-action-right ul{
-     transform: translateX(35px);
+#fp-call-to-action-right{
+    ul{
+        transform: translateX(35px);
+    }
 }
 
-#fp-call-to-action-left img{
-    height: 500px;
-    width: auto;
+#fp-call-to-action-left {
+    img{
+        height: 500px;
+        width: auto;
+    }
 }
 
 #fp-call-to-action-left{
@@ -229,16 +236,20 @@ h2{
     color: @color-black;
 }
 
-section p, section ul {
-    color: @color-darkest-gray;
+section p, section{
+    ul{
+        color: @color-darkest-gray;
+    }
 }
 
-.front-page-call-to-action-container button {
-    color: @color-darker-violet;
-    background-color: transparent;
-    border: 1px solid @color-darker-violet;
-    width: 300px;
-    height: 63px;
+.front-page-call-to-action-container  {
+    button{
+        color: @color-darker-violet;
+        background-color: transparent;
+        border: 1px solid @color-darker-violet;
+        width: 300px;
+        height: 63px;
+    }
 }
 
 /* || Frontpage benefits section */
@@ -271,26 +282,32 @@ section p, section ul {
     box-sizing: border-box;
 }
 
-.frontpage-benefits-container p{
-    width: 564px;
-    margin: 0 auto;
+.frontpage-benefits-container {
+    p{
+        width: 564px;
+        margin: 0 auto;
+    }
 }
 
-#fp-benefits-card-wrapper section img{
-    width: auto;
-    height: 128px;
+#fp-benefits-card-wrapper {
+    section img{
+        width: auto;
+        height: 128px;
+    }
 }
 
 #fp-benefits-card-wrapper{
     justify-content: center;
 }
 
-#fp-benefits-card-wrapper .benefit-card{
-    padding: 58px 46px 70px 46px;
-    border-radius: 16px;
-    // box-shadow: 0px 3px 6px @color-lightest-pink;
-    border-bottom: 3px solid  rgba(@color-darker-violet, .05);   
-    border-right: 2px solid  rgba(@color-darker-violet, .05);   
+#fp-benefits-card-wrapper {
+    .benefit-card{
+        padding: 58px 46px 70px 46px;
+        border-radius: 16px;
+        // box-shadow: 0px 3px 6px @color-lightest-pink;
+        border-bottom: 3px solid  rgba(@color-darker-violet, .05);   
+        border-right: 2px solid  rgba(@color-darker-violet, .05);   
+    }
 }
 
 .fp-benefit-wrapper{
@@ -299,13 +316,17 @@ section p, section ul {
     transform: translateY(68px);
 }
 
-.fp-benefit-wrapper h2{
-    margin: 0;
-    padding: 0;
+.fp-benefit-wrapper {
+    h2{
+        margin: 0;
+        padding: 0;
+    }
 }
 
-.fp-benefit-wrapper p{
-    margin-bottom: 48.5px;
+.fp-benefit-wrapper {
+    p{
+        margin-bottom: 48.5px;
+    }
 }
 
 .benefit-card {
@@ -320,18 +341,17 @@ section p, section ul {
 
 /* || Frontpage footer */
 
-.frontpage-footer-wrapper form{
-    
+.fp-contact-wrapper  {
+    h2{
+        width: 564.5px;
+    }
 }
 
-
-.fp-contact-wrapper h2 {
-    width: 564.5px;
-}
-
-.fp-contact-wrapper p{
-    transform: translateY(24px);
-    width: 564.5px;
+.fp-contact-wrapper {
+    p{
+        transform: translateY(24px);
+        width: 564.5px;
+    }
 }
 
 .fp-contact-wrapper{
@@ -360,32 +380,30 @@ section p, section ul {
     
 }
 
-.form-wrapper input[type=email]{
-    width: 480px;
-    border: 1px solid @color-lighter-gray;
-    border-radius: 22px;
-    opacity: 1;
-    padding-right: 110px;
-    font-size: 1em;
-    padding-left: 15px;
-    opacity: .5;
+.form-wrapper {
+    input[type=email]{
+        width: 480px;
+        border: 1px solid @color-lighter-gray;
+        border-radius: 22px;
+        opacity: 1;
+        padding-right: 110px;
+        font-size: 1em;
+        padding-left: 15px;
+        opacity: .5;
+    }
 }
 
-.form-wrapper input[type=submit]{
-    width: 99px;
-    transform: translateX(-79px);
-    position: absolute;
-    right: -79px;
+.form-wrapper {
+    input[type=submit]{
+        width: 99px;
+        transform: translateX(-79px);
+        position: absolute;
+        right: -79px;
+    }
 }
 
 .hr-wrapper{
-    width: 100%;
-    
-}
-
-.hr-wrapper .grid-mask {
-    
-    
+    width: 100%;  
 }
 
 hr{
@@ -411,17 +429,21 @@ footer {
     margin: 0 auto;
 }
 
-.frontpage-footer-wrapper input{
-    color: @color-darker-gray;
+.frontpage-footer-wrapper {
+    input{
+        color: @color-darker-gray;
+    }
 }
 
-.frontpage-footer-wrapper input[type=submit]{
-    color: @color-white;
-    background: radial-gradient( 50% 50%, #FE1390 0%, #DF1CC5 200%) 0% 0% no-repeat padding-box;
-    width: 99px;
-    height: 44px;
-    border-radius: 22px;
-    border: none;
+.frontpage-footer-wrapper {
+    input[type=submit]{
+        color: @color-white;
+        background: radial-gradient( 50% 50%, #FE1390 0%, #DF1CC5 200%) 0% 0% no-repeat padding-box;
+        width: 99px;
+        height: 44px;
+        border-radius: 22px;
+        border: none;
+    }
 }
 
 .copyright-info {
