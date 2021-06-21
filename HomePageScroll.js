@@ -1,20 +1,18 @@
 class HomePageScroll {
-    scrollTo(element){
-        if (element == 'LoremIpsum'){
-            document.querySelector('.front-page-call-to-action-container').scrollIntoView({behavior: 'smooth'});
-        }
-        if (element == 'Phasellus'){
-            document.querySelector('.frontpage-benefits-container').scrollIntoView({behavior: 'smooth'});
-        }
-        if (element == 'Suspendisse'){
-            /**
-             * This method is different than other ones because the footer
-             * section is wider than the screen width and cannot scroll horizontally
-             */
-            window.scrollTo({
-                top: document.querySelector('.frontpage-footer-wrapper').offsetTop,
-                behavior: 'smooth',
-            });
-        }
+    scrollTo(element){     
+        element == 'LoremIpsum' ? this.scroll('.front-page-call-to-action-container') : null;
+        element == 'Phasellus' ? this.scroll('.frontpage-benefits-container') :  null;
+        element == 'Suspendisse' ? this.scrollOnlyYAxis('.frontpage-footer-wrapper') : null;
+    }
+
+    scroll(element){
+        document.querySelector(element).scrollIntoView({behavior: 'smooth'});
+    }
+
+    scrollOnlyYAxis(element){
+        window.scrollTo({
+            top: document.querySelector(element).offsetTop,
+            behavior: 'smooth',
+        });
     }
 }
