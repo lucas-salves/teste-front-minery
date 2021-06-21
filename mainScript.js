@@ -1,9 +1,7 @@
 window.onload = function(){
     let homepageScroll = new HomePageScroll();
     
-    let navElements = document.getElementsByClassName('nav-elements');
-
-    console.log(navElements);
+    let navElements = document.getElementsByClassName('nav-elements');    
 
     
     navElements[1].addEventListener("click",function(){
