@@ -342,6 +342,7 @@ section ul {
 }
 .form-wrapper input[type=submit] {
   width: 99px;
+  text-transform: uppercase;
   position: absolute;
   right: -79px;
   transform: translateX(-79px);
