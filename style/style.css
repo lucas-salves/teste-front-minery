@@ -12,6 +12,101 @@
   transition: 0.5s;
   transform: translate(-50%, 70%);
 }
+@media screen and (max-width: 1415px) {
+  .fp-footer-left {
+    grid-column: 1/13 !important;
+  }
+  .fp-footer-right {
+    grid-column: 9/13 !important;
+  }
+  .fp-footer-right img {
+    display: none;
+  }
+  .form-wrapper {
+    grid-column: 1/13 !important;
+  }
+  .header-right {
+    display: none;
+  }
+  #fp-benefits-card-wrapper {
+    flex-wrap: wrap !important;
+  }
+  .benefit-card {
+    margin: 15px;
+  }
+  .benefit-card:nth-child(1):hover {
+    z-index: 10;
+  }
+  .benefit-card:nth-child(2):hover {
+    z-index: 30;
+  }
+  .front-page-call-to-action-container,
+  .frontpage-benefits-container {
+    height: 100% !important;
+  }
+  .frontpage-benefits-container {
+    padding-bottom: 110px;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .fp-call-to-action-wrapper .grid-mask {
+    display: flex;
+    flex-direction: column;
+  }
+  .front-page-call-to-action-container {
+    height: 100% !important;
+  }
+  .fp-call-to-action-right {
+    text-align: center !important;
+  }
+  .fp-call-to-action-button {
+    margin: 0 auto !important;
+  }
+  #fp-call-to-action-left img {
+    height: 200px !important;
+  }
+  .front-page-call-to-action-container {
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .main-navigation {
+    margin: revert !important;
+  }
+  header h1 {
+    font-size: 6vw !important;
+  }
+  .header-left {
+    grid-column: revert !important;
+    transform: translateY(86px) !important;
+  }
+  .main-navigation {
+    display: none;
+  }
+  .fp-benefit-wrapper p {
+    width: 50vw !important;
+  }
+  footer {
+    height: 540px;
+  }
+  hr {
+    height: 0;
+  }
+  .fp-contact-wrapper h2,
+  .fp-contact-wrapper p {
+    width: 60vw !important;
+  }
+  .copyright-info {
+    transform: translateY(60px);
+  }
+  .form-wrapper input[type=email] {
+    width: 180px !important;
+  }
+  .form-wrapper input[type=submit] {
+    right: 100px !important;
+    transform: translateX(-70px) !important;
+  }
+}
 @font-face {
   font-family: 'Open Sans';
   font-style: italic;
