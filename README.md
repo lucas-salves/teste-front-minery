@@ -1,4 +1,4 @@
-# Teste Frontend Pokedex
+# Teste Frontend Minery
 
 ## Descriçao
 Esse projeto é um teste de front-end.
