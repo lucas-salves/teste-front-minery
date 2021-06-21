@@ -16,7 +16,7 @@ Concluído  🚀
 
 As seguintes tecnologias foram usadas na construção do projeto:
 
-- [Less](https://lesscss.org/): Foi utilizado o pré-processador Less pelo recurso compilação embutido no Browser que facilita o processo de desenvolvimento.
+- [Less](https://lesscss.org/): Foi utilizado o pré-processador Less pelo recurso de compilação embutido no Browser que facilita o processo de desenvolvimento.
 
 
 ## Layout
