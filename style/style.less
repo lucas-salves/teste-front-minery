@@ -21,6 +21,7 @@ P, a, h1, .fp-contact-form input[type=submit], h2{
 
 body {
     font-size: 16px;
+
     overflow-x: hidden;
 }
 
@@ -123,20 +124,22 @@ button {
 
 .main-navigation{
     ul li a{
-    margin-right: 64px;
-    line-height: 100px;
-    transition: .2s;
+        margin-right: 64px;
+        line-height: 100px;
+        transition: .2s;
     }
 }
 
 .main-navigation ul li a{
-    text-decoration: none;
     color: @color-black;
+    text-decoration: none;
 }
 
 .main-navigation ul{
     list-style: none;
+
     grid-column: 1/13;
+
     transform: translateX(36px);
 }
 
@@ -148,6 +151,7 @@ button {
 
 .header-right{
     grid-column: 9/13;
+
     transform: translateX(-216px);
 }
    
@@ -157,17 +161,20 @@ button {
 
 .header-content button{
     background-color: transparent;
+
     border: 3px solid @color-white;
+
     width: 250px;
     height: 63px;
 }
 
 .header-content{
     background: radial-gradient(farthest-side at 95% 76%, #FE1390 0%, #DF1CC5 200%) 0% 0% no-repeat padding-box;
+
     width: 100vw;
     height: 650px;
+
     transform: translateX(-10%);
-    
 }
 
 .header-item{
@@ -197,14 +204,16 @@ button {
 .front-page-call-to-action-container{
     height: 650px;
     width: 100vw;
-    transform: translateX(-10%);
     margin: 0;
+
+    transform: translateX(-10%);
 }
 
 .fp-call-to-action-wrapper {
     width: 60vw;
-    display: flex;
     height: 100%;
+
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -236,6 +245,7 @@ button {
 
 #fp-call-to-action-left{
     grid-column: 1/6;
+
     transform: translateX(-140px);
 }
 
@@ -257,7 +267,9 @@ section p, section{
     button{
         color: @color-darker-violet;
         background-color: transparent;
+
         border: 1px solid @color-darker-violet;
+
         width: 300px;
         height: 63px;
     }
@@ -266,32 +278,43 @@ section p, section{
 /* || Frontpage benefits section */
 
 .benefit-text{
+    background-color: @color-lighter-pink;
+    color: @color-white; 
+    opacity: 0;
+    
+    border-radius: 16px;
+
+    font-family: 'Open Sans', sans-serif;
+
     width: 208px;
     height: 78px;
-    background-color: @color-lighter-pink;
-    font-size: 1em;
     box-sizing: border-box;
-    overflow: hidden;    
-    padding: 20px;
+    
+    font-size: 1em;
+    
     position: absolute;
     top: 65%;
     left: 50%;
-    transform: translateX(-50%);
-    border-radius: 16px;
-    color: @color-white; 
-    opacity: 0;
+
+    overflow: hidden;    
+
+    padding: 20px;
+    
     transition: .5s;
-    font-family: 'Open Sans', sans-serif;
+
+    transform: translateX(-50%);
 }
 
 
 .frontpage-benefits-container{
     width: 100vw;
-    grid-column: none;
-    transform: translateX(-10%);
     height: 650px;
-    text-align: center;
     box-sizing: border-box;
+
+    grid-column: none;
+    text-align: center;
+
+    transform: translateX(-10%);
 }
 
 .frontpage-benefits-container {
@@ -315,6 +338,7 @@ section p, section{
 #fp-benefits-card-wrapper {
     .benefit-card{
         padding: 58px 46px 70px 46px;
+
         border-radius: 16px;
         // box-shadow: 0px 3px 6px @color-lightest-pink;
         border-bottom: 3px solid  rgba(@color-darker-violet, .05);   
@@ -327,7 +351,8 @@ section p, section{
 
 .fp-benefit-wrapper{
     width: 60vw;
-    margin: 0 auto;    
+    margin: 0 auto;   
+
     transform: translateY(68px);
 }
 
@@ -345,12 +370,16 @@ section p, section{
 }
 
 .benefit-card {
-    position: relative;
     background-color: @color-white;
-    margin-right: 30px;
-    width: 256px;
-    box-sizing: border-box;
+    
     text-align: center;
+    
+    width: 256px;
+    margin-right: 30px;
+    box-sizing: border-box;
+    
+    position: relative;
+
     opacity: 1;    
 }
 
@@ -364,15 +393,17 @@ section p, section{
 
 .fp-contact-wrapper {
     p{
-        transform: translateY(24px);
         width: 564.5px;
+        
+        transform: translateY(24px);
     }
 }
 
 .fp-contact-wrapper{
-    transform: translateY(72px);
     width: 60vw;
     margin: 0 auto;
+    
+    transform: translateY(72px);
     
 }
 
@@ -391,29 +422,34 @@ section p, section{
 .form-wrapper{
     width: 480px;
     height: 44px;
-    display: flex;
     
+    display: flex;
 }
 
 .form-wrapper {
-    input[type=email]{
+    input[type=email]{        
+        opacity: .5;
+        
+        font-size: 1em;
+
         width: 480px;
+        padding-right: 110px;
+        padding-left: 15px;
+
         border: 1px solid @color-lighter-gray;
         border-radius: 22px;
-        opacity: 1;
-        padding-right: 110px;
-        font-size: 1em;
-        padding-left: 15px;
-        opacity: .5;
+        
     }
 }
 
 .form-wrapper {
     input[type=submit]{
         width: 99px;
-        transform: translateX(-79px);
+
         position: absolute;
         right: -79px;
+
+        transform: translateX(-79px);
     }
     input[type=submit]:hover{
         cursor: pointer;
@@ -425,11 +461,15 @@ section p, section{
 }
 
 hr{
-    width: 80vw;
-    margin: 0 auto;
-    height:1px;
     background: radial-gradient( 50% 50%, #FE1390 0%, #DF1CC5 200%) 0% 0% no-repeat padding-box;
+
     border: none;
+
+    width: 80vw;
+    height:1px;
+
+    margin: 0 auto;
+
     transform: translateY(-52px);
 }
 
@@ -438,8 +478,9 @@ footer {
 }
 
 .form-wrapper{
-    transform: translateY(80px);
     grid-column: 6/13;
+    
+    transform: translateY(80px);
 }
 
 .grid-wrapper{
@@ -457,17 +498,24 @@ footer {
     input[type=submit]{
         color: @color-white;
         background: radial-gradient( 50% 50%, #FE1390 0%, #DF1CC5 200%) 0% 0% no-repeat padding-box;
+        
+        border: none;
+        
+        border-radius: 22px;
+        
         width: 99px;
         height: 44px;
-        border-radius: 22px;
-        border: none;
+        
     }
 }
 
 .copyright-info {
     color: @color-darker-gray;
-    width: 80vw;
+
     line-height: 50px;
     justify-content: space-between;
+
+    width: 80vw;
+    
 }
 
